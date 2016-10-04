@@ -1,0 +1,33 @@
+{
+  "name": "mover",
+  "version": "1.0.0",
+  "description": "a mock server",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertzzy/mover.git"
+  },
+  "keywords": [
+    "mock",
+    "server"
+  ],
+  "author": "albert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertzzy/mover/issues"
+  },
+  "homepage": "https://github.com/albertzzy/mover#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.16.1",
+    "webpack-hot-middleware": "^2.12.2"
+  }
+}
