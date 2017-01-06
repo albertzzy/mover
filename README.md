@@ -1,5 +1,5 @@
 <p align="center">
-	<h2>MOVER</h2>
+	<h1 style="text-align:center;">MOVER</h1>
 </p>
 
 
