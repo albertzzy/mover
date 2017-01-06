@@ -1,33 +1,39 @@
 {
   "name": "mover",
   "version": "1.0.0",
-  "description": "a mock server",
+  "description": "a local server",
   "main": "index.js",
-  "directories": {
-    "example": "examples"
-  },
   "scripts": {
+    "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/albertzzy/mover.git"
+  "bin": {
+    "mover": "./bin/index.js"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
   },
   "keywords": [
-    "mock",
-    "server"
+    "server",
+    "koa"
   ],
   "author": "albert",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/albertzzy/mover/issues"
-  },
-  "homepage": "https://github.com/albertzzy/mover#readme",
-  "dependencies": {
-    "express": "^4.14.0"
-  },
   "devDependencies": {
-    "webpack-dev-server": "^1.16.1",
-    "webpack-hot-middleware": "^2.12.2"
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.16.0",
+    "webpack": "^2.2.0-rc.2"
+  },
+  "dependencies": {
+    "co-request": "^1.0.0",
+    "http-proxy": "^1.16.2",
+    "koa": "^1.2.4",
+    "koa-proxy": "^0.7.0",
+    "koa-router": "^7.1.0",
+    "koa-static": "^2.0.0",
+    "request": "^2.79.0"
   }
 }

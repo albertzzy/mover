@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>demo html</title>
+	<link rel="stylesheet" type="text/css" href="http://localhost/public/style.css">
+	<script type="text/javascript" src="http://localhost/public/zepto.js"></script>
+	<style type="text/css">
+		#response{
+			width:500px;
+			height:300px;
+			border:1px solid red;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h2>this is a demo page</h2>
+	<code id="response"></code>
+</body>
+<script type="text/javascript">
+	$.ajax({
+		url:'/getInfo',
+		method:'GET',
+		success:function(res){
+			$('#response').text(JSON.stringify(res))
+		},
+		error:function(){		
+		}
+	})
+
+</script>
+</html>
