@@ -1,0 +1,41 @@
+{
+  "name": "mover",
+  "version": "1.0.0",
+  "description": "a local server",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mover": "./bin/index.js"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "keywords": [
+    "server",
+    "koa"
+  ],
+  "author": "albert",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.16.0",
+    "webpack": "^2.2.0-rc.2"
+  },
+  "dependencies": {
+    "chokidar": "^1.6.1",
+    "co-request": "^1.0.0",
+    "http-proxy": "^1.16.2",
+    "koa": "^1.2.4",
+    "koa-proxy": "^0.7.0",
+    "koa-router": "^7.1.0",
+    "koa-static": "^2.0.0",
+    "request": "^2.79.0",
+    "ws": "^1.1.1"
+  }
+}
