@@ -11,7 +11,7 @@ module.exports = {
 	],
 	proxy:{
 		path:/style/,
-		target:'koajs.com',
+		target:'koajs.com/public',
 		port:80
 	},
 	hot:true

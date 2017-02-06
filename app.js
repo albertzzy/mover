@@ -20,7 +20,7 @@ chat.attach(app);
 
 
 // 反向代理 -- before static
-// app.use(proxy);
+app.use(proxy);
 
 
 // static
